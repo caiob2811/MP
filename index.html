@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="flex justify-between items-center px-7 text-white relative">
+            <!-- Logo -->
+            <a href="index.html">
+                <img src="img/2.png" alt="letra m" class="w-32 logo" />
+            </a>
+
+            <!-- Botão hamburguer (mobile) -->
+            <button id="menu-toggle" class="sm:hidden text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Menu desktop -->
+            <ul class="hidden sm:flex gap-5">
+                <li><a class="hover:text-yellow-500 transition" href="#sobre">Sobre</a></li>
+                <li><a class="hover:text-yellow-500 transition" href="#contato">Contato</a></li>
+                <li><a class="hover:text-yellow-500 transition" href="#localizacao">Localização</a></li>
+            </ul>
+        </nav>
+
+        <!-- 🔽 Menu mobile agora fora do nav, abaixo dele -->
+        <div id="mobile-menu"
+            class="w-full flex-col items-center gap-4 pb-1 sm:hidden transition-all duration-300 ease-in-out max-h-0 overflow-hidden bg-[#2e8b57]">
+            <a href="#sobre" class="text-white hover:text-yellow-400 block text-center">Sobre</a>
+            <a href="#contato" class="text-white hover:text-yellow-400 block text-center">Contato</a>
+            <a href="#localizacao" class="text-white hover:text-yellow-400 block text-center">Local</a>
+        </div>
+    </header>
+
+
+
+    <main>
+        <div class="flex flex-col py-8 px-7 items-center gap-6 fundo">
+            <h2 class="font">Manuella Penha da Silva</h2>
+            <img src="/img/manu.jpg" class="manu" />
+
+            <p class="sm:px-7 sobre-mim">Tenho 22 anos e sou graduada em Biomedicina pela Universidade Estácio,
+                onde desenvolvi uma base sólida em ciências da saúde.</p>
+        </div>
+
+        <hr class="border border-b shadow-black">
+
+        <div class="flex flex-col py-8 px-7 items-center gap-6 fundo" id="sobre">
+            <h2 class="font">Clínica MP</h2>
+            <img src="/img/clinica-estetica-biomedicina-enquadramento.jpg" />
+            <p class="sm:px-5 sobre">Temos o privilégio de contar com um dos melhores profissionais do estado do
+                Rio de
+                Janeiro,
+                proporcionando uma experiência que faz você sair feliz e querendo voltar.</p>
+
+
+            <h3 class="text-xl font-semibold mt-4">Alguns dos nossos serviços:</h3>
+
+            <ol class="list-decimal pl-6 sm:pl-8 text-lg text-left max-w-xl servicos">
+                <li>Aplicação de toxina botulínica (Botox)</li>
+                <li>Preenchimento facial com ácido hialurônico</li>
+                <li>Limpeza de pele profunda</li>
+                <li>Peeling químico</li>
+                <li>Microagulhamento</li>
+                <li>Intradermoterapia (para gordura localizada e celulite)</li>
+                <li>Tratamento de melasma e manchas</li>
+                <li>Skincare personalizado</li>
+                <li>Tratamentos capilares (queda, fortalecimento)</li>
+                <li>Harmonização facial</li>
+            </ol>
+
+            <div class="grid grid-cols-3 gap-4 max-w-5xl mx-auto">
+                <img src="img/botox.jpg" alt="Botox" />
+                <img src="img/harmonizacao-facial.jpg" alt="Harmonização" />
+                <img src="img/harmonizacao-facial.jpg" alt="Harmonização" />
+            </div>
+        </div>
+
+        <hr class="border border-b shadow-black">
+
+        <div id="contato" class="text-center py-10 px-6 fundo shadow-md mx-auto">
+            <p class="text-2xl font-semibold mb-4">Gostou do que viu?</p>
+
+            <p class="text-lg mb-6">Fale com a melhor clínica de Biomedicina Estética do Rio de Janeiro e agende seu
+                atendimento com quem entende do assunto!</p>
+
+            <a href="https://w.app/s4lh3l" target="_blank">
+                <button
+                    class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 mb-4">
+                    Fale conosco pelo WhatsApp
+                </button>
+            </a>
+
+            <p class="text-md text-gray-700">Telefone: <strong>(21) 4002-8922</strong></p>
+        </div>
+
+        <hr class="border border-b shadow-black">
+
+        <div class="text-center py-10 px-6 shadow-md mx-auto fundo" id="localizacao">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">
+                Nossa Localização
+            </h3>
+
+            <div class="overflow-hidden rounded-lg shadow-lg">
+                <iframe class="w-full aspect-[4/3]"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0751453262283!2d-43.187604213360856!3d-22.94745948574865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997ff18ad255d7%3A0xe110541cdcfacbbb!2sBotafogo%20Praia%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1753994526329!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer text-center text-white py-8">
+        <p id="texto-footer"></p>
+        <br />
+        <a href="https://www.instagram.com/manuellapenha_/" target="_blank">
+            <i class="fa-brands fa-instagram  hover:text-yellow-500 transition"></i>
+        </a>
+    </footer>
+</body>
+<script src="app.js"></script>
+
+</html>
